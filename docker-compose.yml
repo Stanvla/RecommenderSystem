@@ -1,0 +1,11 @@
+version: "3.9"
+services:
+  app:
+    image: jupyter/pyspark-notebook
+    ports:
+      - "8888:8888"
+      - "4040:4040"
+      - "4041:4041"
+    volumes:
+      - /home/stankvla/Projects/Python/RecomederSystems/app:/home/jovyan/app
+
